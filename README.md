@@ -1,1 +1,1 @@
-# tmux-nvim-config
+# dotfiles
