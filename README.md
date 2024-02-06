@@ -14,3 +14,6 @@ eval "$(starship init bash)"
 ## Install neovim
 ### Dependencies
 [Ripgrep](https://github.com/BurntSushi/ripgrep)
+
+## Install tmux
+> git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
