@@ -16,4 +16,5 @@ eval "$(starship init bash)"
 [Ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Install tmux
+### Dependencies
 > git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
