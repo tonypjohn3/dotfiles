@@ -10,3 +10,7 @@ chsh --shell /bin/bash <your-username>
 eval "$(starship init bash)"
 ```
 * add starship config ~/.config/starship.toml
+
+## Install neovim
+### Dependencies
+[Ripgrep](https://github.com/BurntSushi/ripgrep)
