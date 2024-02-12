@@ -7,6 +7,6 @@ return {
     require("tokyonight").setup({
       style = "night",
     })
-    require("tokyonight").load()
+    -- require("tokyonight").load()
   end,
 }
