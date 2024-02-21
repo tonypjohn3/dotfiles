@@ -27,4 +27,6 @@ eval "$(starship init bash)"
 
 ### Random
 * '!' is used to execute shell commands in nvim
+* `%` refers to current file in command mode
 * `:w !diff % -` will show diff of unsaved changes. Explanation: write file (:w) and send to standard in ('-') of diff command (!diff)
+* `Ctrl-g` prints current file name. `{count}Ctrl-g` is like `Ctrl-g`, but prints the current file name with full path. If count is greater than 1 the current buffer number is also given
