@@ -30,3 +30,9 @@ eval "$(starship init bash)"
 * `%` refers to current file in command mode
 * `:w !diff % -` will show diff of unsaved changes. Explanation: write file (:w) and send to standard in ('-') of diff command (!diff)
 * `Ctrl-g` prints current file name. `{count}Ctrl-g` is like `Ctrl-g`, but prints the current file name with full path. If count is greater than 1 the current buffer number is also given
+
+## Tmux
+* `<Prefix><space>` will cycle through different layouts
+* `<Prefix><Alt-1>` will change layout to even horizontal
+* `<Prefix><Alt-2>` will change layout to even vertical
+* `<Prefix><Alt-5>` or `tmux select-layout tiled` will change layout to even tiled
