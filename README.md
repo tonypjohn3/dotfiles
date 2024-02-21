@@ -18,3 +18,13 @@ eval "$(starship init bash)"
 ## Install tmux
 ### Dependencies
 > git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
+
+
+## Nvim
+### Git shortcuts
+* To setup a command "DiffOrig" to see diff of unsaved changes to saved changes on disk
+    > command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+
+### Random
+* '!' is used to execute shell commands in nvim
+* `:w !diff % -` will show diff of unsaved changes. Explanation: write file (:w) and send to standard in ('-') of diff command (!diff)
