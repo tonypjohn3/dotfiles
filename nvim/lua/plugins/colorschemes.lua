@@ -21,7 +21,7 @@ return {
     name = "nightfly",
     lazy = false,
     config = function()
-      vim.cmd("colorscheme nightfly")
+      -- vim.cmd("colorscheme nightfly")
     end,
   },
   { "EdenEast/nightfox.nvim" },
@@ -50,7 +50,7 @@ return {
       require("tokyonight").setup({
         style = "night",
       })
-      -- require("tokyonight").load()
+      require("tokyonight").load()
     end,
   },
 }
