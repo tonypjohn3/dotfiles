@@ -10,11 +10,19 @@ return {
       vim.cmd("colorscheme github_dark_default")
     end,
   },
+  { "ellisonleao/gruvbox.nvim" },
   { "rebelot/kanagawa.nvim" },
   { "marko-cerovac/material.nvim" },
+  { "savq/melange-nvim" },
   { "dasupradyumna/midnight.nvim" },
   { "miikanissi/modus-themes.nvim" },
-  { "bluz71/vim-moonfly-colors",   name = "moonfly" },
+  {
+    "loctvl842/monokai-pro.nvim",
+    config = function()
+      require("monokai-pro").setup()
+    end
+  },
+  { "bluz71/vim-moonfly-colors", name = "moonfly" },
   { "oxfist/night-owl.nvim" },
   {
     "bluz71/vim-nightfly-colors",
@@ -35,12 +43,13 @@ return {
     config = function()
       require("onedark").setup({
         -- Set a style preset. 'dark' is default.
-        -- style = 'darker', -- dark, darker, cool, deep, warm, warmer, light
+        style = 'darker', -- dark, darker, cool, deep, warm, warmer, light
       })
       -- require('onedark').load()
     end,
   },
-  { "rose-pine/neovim", name = "rose-pine" },
+  { "rose-pine/neovim",    name = "rose-pine" },
+  { "jacoborus/tender.vim" },
   {
     "folke/tokyonight.nvim",
     lazy = false,
