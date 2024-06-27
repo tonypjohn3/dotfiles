@@ -3,8 +3,8 @@ return {
   { "catppuccin/nvim",  name = "catppuccin" },
   {
     "projekt0n/github-nvim-theme",
-    lazy = false,  -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
+    -- lazy = false,  -- make sure we load this during startup if it is your main colorscheme
+    -- priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("github-theme").setup()
       -- vim.cmd("colorscheme github_dark_default")
@@ -27,9 +27,9 @@ return {
   {
     "bluz71/vim-nightfly-colors",
     name = "nightfly",
-    lazy = false,
+    -- lazy = false,
     config = function()
-      vim.cmd("colorscheme nightfly")
+      -- vim.cmd("colorscheme nightfly")
     end,
   },
   { "EdenEast/nightfox.nvim" },
@@ -48,12 +48,19 @@ return {
       -- require('onedark').load()
     end,
   },
-  { "rose-pine/neovim",    name = "rose-pine" },
+  { "rose-pine/neovim",
+    name = "rose-pine",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd("colorscheme rose-pine")
+    end,
+  },
   { "jacoborus/tender.vim" },
   {
     "folke/tokyonight.nvim",
-    lazy = false,
-    priority = 1000,
+    -- lazy = false,
+    -- priority = 1000,
     opts = {},
     config = function()
       require("tokyonight").setup({
