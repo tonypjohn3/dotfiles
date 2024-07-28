@@ -1,0 +1,41 @@
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.startupEditor": "none",
+    "yaml.schemas": {
+        "file:///Users/2049315/.vscode/extensions/atlassian.atlascode-3.0.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "redhat.telemetry.enabled": false,
+    "editor.rename.enablePreview": false,
+    "editor.minimap.enabled": false,
+    "catppuccin.italicComments": false,
+    "catppuccin.italicKeywords": false,
+    "catppuccin.accentColor": "sky",
+    "editor.fontFamily": "'Monaspace Neon', Menlo, Monaco, 'Courier New', monospace",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["lineBreakInsert"],
+            "silent": true
+        }
+    ],
+    "oneDark.italic": false,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "editor.stickyScroll.scrollWithEditor": false,
+    "workbench.colorCustomizations": {
+        "[Catppuccin Mocha]": {
+            "editor.background": "#11111b",
+            "editorGutter.background": "#11111b"
+        }
+    }
+}
