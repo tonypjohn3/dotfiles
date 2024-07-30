@@ -33,6 +33,13 @@
     "workbench.colorTheme": "Catppuccin Mocha",
     "editor.stickyScroll.scrollWithEditor": false,
     "workbench.colorCustomizations": {
+        "[Ayu Dark Bordered]": {
+            "sideBar.foreground": "#bfbdb6",
+            "gitDecoration.ignoredResourceForeground": "#d3d5db80",
+            "breadcrumb.foreground": "#d3d5db80",
+            "foreground": "#bfbdb6",
+            "statusBar.foreground": "#bfbdb6"
+        },
         "[Catppuccin Mocha]": {
             "editor.background": "#11111b",
             "editorGutter.background": "#11111b"
