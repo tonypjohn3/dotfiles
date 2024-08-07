@@ -1,6 +1,16 @@
 return {
   { "Shatur/neovim-ayu" },
-  { "catppuccin/nvim",  name = "catppuccin" },
+  { "catppuccin/nvim",
+    name = "catppuccin",
+    lazy = false,
+    priority = 1000,
+    config = function ()
+      require("catppuccin").setup({
+        flavour = "mocha"
+      })
+      require("catppuccin").load()
+    end
+  },
   {
     "projekt0n/github-nvim-theme",
     -- lazy = false,  -- make sure we load this during startup if it is your main colorscheme
@@ -39,7 +49,7 @@ return {
     -- Theme inspired by Atom
     "navarasu/onedark.nvim",
     -- priority = 1000,
-    -- lazy = false,
+     -- lazy = false,
     config = function()
       require("onedark").setup({
         -- Set a style preset. 'dark' is default.
@@ -48,13 +58,24 @@ return {
       -- require('onedark').load()
     end,
   },
+  -- {
+  --   "olimorris/onedarkpro.nvim",
+  --   priority = 1000, -- Ensure it loads first
+  --   lazy = false,
+  --   config = function()
+  --     -- require('onedarkpro').setup({
+  --     --   theme = 'onedark_dark'
+  --     -- })
+  --     require('onedarkpro').load()
+  --   end
+  -- },
   { "rose-pine/neovim",
     name = "rose-pine",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd("colorscheme rose-pine")
-    end,
+    -- lazy = false,
+    -- priority = 1000,
+    -- config = function()
+    --   vim.cmd("colorscheme rose-pine")
+    -- end,
   },
   { "jacoborus/tender.vim" },
   {
