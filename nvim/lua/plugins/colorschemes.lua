@@ -13,8 +13,8 @@ return {
   },
   {
     "projekt0n/github-nvim-theme",
-    -- lazy = false,  -- make sure we load this during startup if it is your main colorscheme
-    -- priority = 1000, -- make sure to load this before all the other start plugins
+    lazy = false,  -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("github-theme").setup()
       -- vim.cmd("colorscheme github_dark_default")
@@ -49,11 +49,11 @@ return {
     -- Theme inspired by Atom
     "navarasu/onedark.nvim",
     -- priority = 1000,
-     -- lazy = false,
+    -- lazy = false,
     config = function()
       require("onedark").setup({
         -- Set a style preset. 'dark' is default.
-        style = 'darker', -- dark, darker, cool, deep, warm, warmer, light
+        style = "darker", -- dark, darker, cool, deep, warm, warmer, light
       })
       -- require('onedark').load()
     end,
@@ -80,8 +80,8 @@ return {
   { "jacoborus/tender.vim" },
   {
     "folke/tokyonight.nvim",
-    -- lazy = false,
-    -- priority = 1000,
+    lazy = false,
+    priority = 1000,
     opts = {},
     config = function()
       require("tokyonight").setup({
@@ -90,4 +90,15 @@ return {
       -- require("tokyonight").load()
     end,
   },
+  {
+    "zenbones-theme/zenbones.nvim",
+    lazy = false,
+    priority = 1000,
+    dependencies = { "rktjmp/lush.nvim" },
+    -- config = function ()
+      -- require("zenbones").load()
+    --   vim.cmd("colorscheme zenbones")
+    -- end,
+  },
+  { "p00f/alabaster.nvim" },
 }
