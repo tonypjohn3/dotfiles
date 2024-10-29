@@ -1,6 +1,12 @@
 -- return {}
 return {
-  { "Shatur/neovim-ayu" },
+  { "Shatur/neovim-ayu",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd("colorscheme ayu-mirage")
+    end
+  },
   { "catppuccin/nvim",
     name = "catppuccin",
     lazy = false,
@@ -16,7 +22,7 @@ return {
         },
         flavour = "mocha"
       })
-      require("catppuccin").load()
+      -- require("catppuccin").load()
     end
   },
   {
