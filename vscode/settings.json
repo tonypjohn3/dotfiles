@@ -48,53 +48,95 @@
         },
         "[Catppuccin Mocha]": {
             "editor.background": "#11111b",
-            "editorGutter.background": "#11111b"
+            "editorGutter.background": "#11111b",
+            "terminal.background": "#000000",
+            "sideBar.background": "#000000"
         },
         "[Nord]": {
-        "activityBar.background": "#111111",
-        "activityBarBadge.foreground": "#111111",
-        "badge.foreground": "#111111",
-        "button.foreground": "#111111",
-        "debugExceptionWidget.border": "#111111",
-        "editor.background": "#111111",
-        "editorBracketMatch.background": "#111111",
-        "editorGroupHeader.noTabsBackground": "#111111",
-        "editorGroupHeader.tabsBackground": "#111111",
-        "editorGutter.background": "#111111",
-        "editorSuggestWidget.background": "#111111",
-        "editorWidget.background": "#111111",
-        "list.activeSelectionForeground": "#111111",
-        "minimap.background": "#111111",
-        "notificationCenterHeader.background": "#111111",
-        "notifications.border": "#111111",
-        "panel.background": "#111111",
-        "peekViewEditor.background": "#111111",
-        "peekViewEditorGutter.background": "#111111",
-        "peekViewResult.background": "#111111",
-        "quickInputList.focusForeground": "#111111",
-        "sideBar.background": "#111111",
-        "statusBarItem.warningForeground": "#111111",
-        "tab.inactiveBackground": "#111111",
-        "terminal.background": "#111111",
-        "titleBar.activeBackground": "#111111",
-        "titleBar.border": "#111111",
-        "titleBar.inactiveBackground": "#111111",
-        "walkThrough.embeddedEditorBackground": "#111111",
-        "activityBar.activeBackground": "#111111",
-        "dropdown.background": "#111111",
-        "debugToolBar.background": "#111111",
-        "input.background": "#111111",
-        "list.hoverBackground": "#111111",
-        "notificationCenter.border": "#111111",
-        "notificationToast.border": "#111111",
-        "notifications.background": "#111111",
-        "panel.border": "#111111",
-        "peekViewTitle.background": "#111111",
-        "sideBarSectionHeader.background": "#111111",
-        "statusBar.background": "#111111",
-        "statusBar.noFolderBackground": "#111111",
-        "statusBarItem.errorBackground": "#111111",
-        "statusBarItem.prominentBackground": "#111111"
-      }
-    }
+            "activityBar.background": "#111111",
+            "activityBarBadge.foreground": "#111111",
+            "badge.foreground": "#111111",
+            "button.foreground": "#111111",
+            "debugExceptionWidget.border": "#111111",
+            "editor.background": "#111111",
+            "editorBracketMatch.background": "#111111",
+            "editorGroupHeader.noTabsBackground": "#111111",
+            "editorGroupHeader.tabsBackground": "#111111",
+            "editorGutter.background": "#111111",
+            "editorSuggestWidget.background": "#111111",
+            "editorWidget.background": "#111111",
+            "list.activeSelectionForeground": "#111111",
+            "minimap.background": "#111111",
+            "notificationCenterHeader.background": "#111111",
+            "notifications.border": "#111111",
+            "panel.background": "#111111",
+            "peekViewEditor.background": "#111111",
+            "peekViewEditorGutter.background": "#111111",
+            "peekViewResult.background": "#111111",
+            "quickInputList.focusForeground": "#111111",
+            "sideBar.background": "#111111",
+            "statusBarItem.warningForeground": "#111111",
+            "tab.inactiveBackground": "#111111",
+            "terminal.background": "#111111",
+            "titleBar.activeBackground": "#111111",
+            "titleBar.border": "#111111",
+            "titleBar.inactiveBackground": "#111111",
+            "walkThrough.embeddedEditorBackground": "#111111",
+            "activityBar.activeBackground": "#111111",
+            "dropdown.background": "#111111",
+            "debugToolBar.background": "#111111",
+            "input.background": "#111111",
+            "list.hoverBackground": "#111111",
+            "notificationCenter.border": "#111111",
+            "notificationToast.border": "#111111",
+            "notifications.background": "#111111",
+            "panel.border": "#111111",
+            "peekViewTitle.background": "#111111",
+            "sideBarSectionHeader.background": "#111111",
+            "statusBar.background": "#111111",
+            "statusBar.noFolderBackground": "#111111",
+            "statusBarItem.errorBackground": "#111111",
+            "statusBarItem.prominentBackground": "#111111"
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Catppuccin Mocha]": {
+            "variables": "#cdd6f4",
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable",
+                        "variable.language",
+                        "variable.name",
+                        "variable.other",
+                        "variable.other.readwrite",
+                        "variable.parameter",
+                        "variable.other.constant.property"
+                    ],
+                    "settings": {
+                        "foreground": "#cdd6f4",
+                    }
+                }
+            ]
+        },
+        "[One Dark Pro Darker]": {
+            "variables": "#abb2bf",
+            "textMateRules": [
+                {
+                    "scope": [
+                        "variable",
+                        "variable.language",
+                        "variable.name",
+                        "variable.other",
+                        "variable.other.readwrite",
+                        "variable.parameter",
+                        "variable.other.constant.property"
+                    ],
+                    "settings": {
+                        "foreground": "#abb2bf",
+                    }
+                }
+            ]
+        }
+    },
 }
